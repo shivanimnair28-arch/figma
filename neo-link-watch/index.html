@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEO_LINK Watch Prototype</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="stage">
+<div class="home-track-workout-1 screen active" id="home">
+<div class="watch-case-2">
+<div class="watch-display-3">
+<div class="watch-status-4">
+<p class="text-5"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-6">
+<p class="text-7"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-8">
+<img src="images/vector-9.svg" class="vector-9" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-10">
+<p class="text-11"><span class="text-rgb-32-40-48">NEO_LINK</span></p>
+</div>
+<div class="screen-content-12">
+<div class="list-item-13" data-goto="workout-ready" role="button" tabindex="0">
+<div class="activity-14">
+<img src="images/vector-15.svg" class="vector-15" alt="vector" />
+</div>
+<div class="item-content-16">
+<p class="text-17"><span class="text-rgb-53-109-170">Track workout</span></p>
+</div>
+<div class="check-18">
+<img src="images/vector-19.svg" class="vector-19" alt="vector" />
+</div>
+</div>
+<div class="list-item-20" data-goto="alerts-list" role="button" tabindex="0">
+<div class="bell-21">
+<img src="images/vector-22.svg" class="vector-22" alt="vector" />
+</div>
+<div class="item-content-23">
+<p class="text-24"><span class="text-rgb-32-40-48">View alerts</span></p>
+</div>
+<div class="chevron-right-25">
+<img src="images/vector-26.svg" class="vector-26" alt="vector" />
+</div>
+</div>
+
+<div class="list-item-27" data-goto="quick-select" role="button" tabindex="0">
+<div class="message-circle-28">
+<img src="images/vector-29.svg" class="vector-29" alt="vector" />
+</div>
+<div class="item-content-30">
+<p class="text-31"><span class="text-rgb-32-40-48">Quick reply</span></p>
+</div>
+<div class="chevron-right-32">
+<img src="images/vector-33.svg" class="vector-33" alt="vector" />
+</div>
+</div>
+
+<div class="list-item-34" data-goto="settings-menu" role="button" tabindex="0">
+<div class="settings-35">
+<img src="images/vector-36.svg" class="vector-36" alt="vector" />
+</div>
+<div class="item-content-37">
+<p class="text-38"><span class="text-rgb-32-40-48">System settings</span></p>
+</div>
+<div class="chevron-right-39">
+<img src="images/vector-40.svg" class="vector-40" alt="vector" />
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<p class="text-41"><span class="text-rgb-247-248-250">FRAME1</span></p>
+</div>
+<div class="node-42 screen" id="workout-ready">
+<div class="watch-case-43">
+<div class="watch-display-44">
+<div class="watch-status-45">
+<p class="text-46"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-47">
+<p class="text-48"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-49">
+<img src="images/vector-50.svg" class="vector-50" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-51" data-goto="home" role="button" tabindex="0">
+<div class="chevron-left-52">
+<img src="images/vector-53.svg" class="vector-53" alt="vector" />
+</div>
+<p class="text-54"><span class="text-rgb-32-40-48">Track workout</span></p>
+</div>
+<div class="screen-content-55">
+<div class="workout-choice-56">
+<div class="footprints-57">
+<img src="images/vector-58.svg" class="vector-58" alt="vector" />
+</div>
+<p class="text-59"><span class="text-rgb-32-40-48">Outdoor walk</span></p>
+<p class="text-60"><span class="text-rgb-102-113-125">Ready when you are</span></p>
+</div>
+<div class="action-61" data-goto="workout-progress" role="button" tabindex="0">
+<p class="text-62"><span class="text-white">Start</span></p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-63"><span class="text-rgb-247-248-250">FRAME 2</span></p>
+</div>
+<div class="node-64 screen" id="workout-progress">
+<div class="watch-case-65">
+<div class="watch-display-66">
+<div class="watch-status-67">
+<p class="text-68"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-69">
+<p class="text-70"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-71">
+<img src="images/vector-72.svg" class="vector-72" alt="vector" />
+</div>
+</div>
+</div>
+<p class="text-73"><span class="text-rgb-32-40-48"> Outdoor walk</span></p>
+<div class="screen-content-74">
+<div class="workout-metrics-75">
+<p class="text-76"><span class="text-rgb-102-113-125">Recording</span></p>
+<p class="text-77"><span class="text-rgb-32-40-48">4.20</span><span class="text-rgb-102-113-125"> km</span></p>
+<p class="text-78"><span class="text-rgb-32-40-48">0:24:12</span></p>
+<p class="text-79"><span class="text-rgb-102-113-125">Elapsed time</span></p>
+</div>
+<div class="action-80" data-goto="workout-paused" role="button" tabindex="0">
+<div class="pause-81">
+<img src="images/vector-82.svg" class="vector-82" alt="vector" />
+</div>
+<p class="text-83"><span class="text-rgb-32-40-48">Pause</span></p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-84"><span class="text-rgb-247-248-250">FRAME 3</span></p>
+</div>
+<div class="node-85 screen" id="workout-paused">
+<div class="watch-case-86">
+<div class="watch-display-87">
+<div class="watch-status-88">
+<p class="text-89"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-90">
+<p class="text-91"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-92">
+<img src="images/vector-93.svg" class="vector-93" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-94" data-goto="workout-progress" role="button" tabindex="0">
+<div class="chevron-left-95">
+<img src="images/vector-96.svg" class="vector-96" alt="vector" />
+</div>
+<p class="text-97"><span class="text-rgb-32-40-48">Paused</span></p>
+</div>
+<div class="screen-content-98">
+<div class="workout-metrics-99">
+<p class="text-100"><span class="text-rgb-102-113-125">Workout paused</span></p>
+<p class="text-101"><span class="text-rgb-32-40-48">4.20</span><span class="text-rgb-102-113-125"> km</span></p>
+<p class="text-102"><span class="text-rgb-32-40-48">0:24:12</span></p>
+<p class="text-103"><span class="text-rgb-102-113-125">Elapsed time</span></p>
+</div>
+<div class="workout-actions-104">
+<div class="action-105" data-goto="workout-progress" role="button" tabindex="0">
+<p class="text-106"><span class="text-white">Resume</span></p>
+</div>
+<div class="action-107" data-goto="workout-summary" role="button" tabindex="0">
+<p class="text-108"><span class="text-rgb-32-40-48">End</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-109"><span class="text-rgb-247-248-250">FRAME 4</span></p>
+</div>
+<div class="node-110 screen" id="workout-summary">
+<div class="watch-case-111">
+<div class="watch-display-112">
+<div class="watch-status-113">
+<p class="text-114"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-115">
+<p class="text-116"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-117">
+<img src="images/vector-118.svg" class="vector-118" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-119" data-goto="home" role="button" tabindex="0">
+<div class="chevron-left-120">
+<img src="images/vector-121.svg" class="vector-121" alt="vector" />
+</div>
+<p class="text-122"><span class="text-rgb-32-40-48">Summary</span></p>
+</div>
+<div class="screen-content-123">
+<div class="workout-metrics-124">
+<p class="text-125"><span class="text-rgb-102-113-125">Outdoor walk · Saved</span></p>
+<p class="text-126"><span class="text-rgb-32-40-48">4.20</span><span class="text-rgb-102-113-125"> km</span></p>
+<p class="text-127"><span class="text-rgb-32-40-48">0:24:12</span></p>
+<p class="text-128"><span class="text-rgb-102-113-125">Total workout time</span></p>
+</div>
+<div class="action-129" data-goto="home" role="button" tabindex="0">
+<p class="text-130"><span class="text-white">Done</span></p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-131"><span class="text-rgb-247-248-250">FRAME 5</span></p>
+</div>
+<div class="alerts-alert-list-132 screen" id="alerts-list">
+<div class="watch-case-133">
+<div class="watch-display-134">
+<div class="watch-status-135">
+<p class="text-136"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-137">
+<p class="text-138"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-139">
+<img src="images/vector-140.svg" class="vector-140" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-141" data-goto="home" role="button" tabindex="0">
+<div class="chevron-left-142">
+<img src="images/vector-143.svg" class="vector-143" alt="vector" />
+</div>
+<p class="text-144"><span class="text-rgb-32-40-48">Alerts</span></p>
+
+</div>
+<div class="screen-content-145">
+<p class="text-146"><span class="text-rgb-102-113-125" id="unread-count">3 unread · Today</span></p>
+<div class="list-item-147">
+<div class="item-content-148">
+<p class="text-149"><span class="text-rgb-32-40-48">Weight loss</span></p>
+<p class="text-150"><span class="text-rgb-102-113-125">Health · 09:30</span></p>
+</div>
+<div class="unread-indicator-151"></div>
+</div>
+<div class="list-item-152" data-goto="alerts-read" role="button" tabindex="0">
+<div class="item-content-153">
+<p class="text-154"><span class="text-rgb-32-40-48">Sleep schedule</span></p>
+<p class="text-155"><span class="text-rgb-102-113-125">Sleep · 09:15</span></p>
+</div>
+<div class="unread-indicator-156" id="sleep-dot"></div>
+</div>
+<div class="list-item-157">
+<div class="item-content-158">
+<p class="text-159"><span class="text-rgb-32-40-48">Oxygen level</span></p>
+<p class="text-160"><span class="text-rgb-102-113-125">Health · 08:50</span></p>
+</div>
+<img src="images/heart-with-pulse-161.png" class="heart-with-pulse-161" alt="heart-with-pulse" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="alerts-read-alert-162 screen" id="alerts-read">
+<div class="watch-case-163">
+<div class="watch-display-164">
+<div class="watch-status-165">
+<p class="text-166"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-167">
+<p class="text-168"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-169">
+<img src="images/vector-170.svg" class="vector-170" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-171" data-goto="alerts-list" role="button" tabindex="0">
+<div class="chevron-left-172">
+<img src="images/vector-173.svg" class="vector-173" alt="vector" />
+</div>
+<p class="text-174"><span class="text-rgb-32-40-48">Sleep schedule</span></p>
+</div>
+<div class="screen-content-175">
+<p class="text-176"><span class="text-rgb-102-113-125" id="sleep-status">Sleep · Today, 09:15 · Unread</span></p>
+<div class="alert-message-177">
+<p class="text-178"><span class="text-rgb-32-40-48">Bedtime reminder</span></p>
+<p class="text-179"><span class="text-rgb-32-40-48">Your bedtime is set for 10:30 pm tonight.</span></p>
+</div>
+<div class="action-180" data-goto="alerts-action" role="button" tabindex="0">
+<p class="text-181"><span class="text-white">Action</span></p>
+</div>
+</div>
+<div class="node-182"></div>
+<div class="node-183"></div>
+</div>
+</div>
+</div>
+<div class="node-184 screen" id="alerts-action">
+<div class="watch-case-185">
+<div class="watch-display-186">
+<div class="watch-status-187">
+<p class="text-188"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-189">
+<p class="text-190"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-191">
+<img src="images/vector-192.svg" class="vector-192" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-193" data-goto="alerts-read" role="button" tabindex="0">
+<div class="chevron-left-194">
+<img src="images/vector-195.svg" class="vector-195" alt="vector" />
+</div>
+<p class="text-196"><span class="text-rgb-32-40-48">Alert action</span></p>
+</div>
+<div class="screen-content-197">
+<p class="text-198"><span class="text-rgb-102-113-125">Sleep schedule</span></p>
+<p class="text-199"><span class="text-rgb-32-40-48">Keep the alert and mark it as read.</span></p>
+<div class="action-200" data-goto="alerts-list" data-action="markread" role="button" tabindex="0">
+<p class="text-201"><span class="text-white">Mark as read</span></p>
+</div>
+
+<div class="action-202" data-goto="alerts-read" role="button" tabindex="0">
+<p class="text-203"><span class="text-rgb-32-40-48">Cancel</span></p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-204"><span class="text-rgb-247-248-250">FRAME 4</span></p>
+</div>
+<div class="node-209 screen" id="quick-select">
+<div class="watch-case-210">
+<div class="watch-display-211">
+<div class="watch-status-212">
+<p class="text-213"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-214">
+<p class="text-215"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-216">
+<img src="images/vector-217.svg" class="vector-217" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-218" data-goto="home" role="button" tabindex="0">
+<div class="chevron-left-219">
+<img src="images/vector-220.svg" class="vector-220" alt="vector" />
+</div>
+<p class="text-221"><span class="text-rgb-32-40-48">Quick reply</span></p>
+</div>
+
+<div class="screen-content-222">
+<p class="text-223"><span class="text-rgb-102-113-125">Choose a recipient</span></p>
+<div class="list-item-224">
+<div class="item-content-225">
+<p class="text-226"><span class="text-rgb-32-40-48">Shivani</span></p>
+</div>
+<div class="chevron-right-227">
+<img src="images/vector-228.svg" class="vector-228" alt="vector" />
+</div>
+<img src="images/stash-229.png" class="stash-229" alt="stash" />
+</div>
+<div class="list-item-230" data-goto="quick-view" role="button" tabindex="0">
+<div class="item-content-231">
+<p class="text-232"><span class="text-rgb-32-40-48">Sidharth</span></p>
+</div>
+<div class="chevron-right-233">
+<img src="images/vector-234.svg" class="vector-234" alt="vector" />
+</div>
+<img src="images/stash-235.png" class="stash-235" alt="stash" />
+</div>
+<div class="list-item-236">
+<div class="item-content-237">
+<p class="text-238"><span class="text-rgb-32-40-48">Sindhu</span></p>
+</div>
+<div class="chevron-right-239">
+<img src="images/vector-240.svg" class="vector-240" alt="vector" />
+</div>
+<img src="images/stash-241.png" class="stash-241" alt="stash" />
+</div>
+</div>
+</div>
+</div>
+<p class="text-242"><span class="text-rgb-247-248-250">FRAME 2</span></p>
+</div>
+<div class="node-243 screen" id="quick-view">
+<div class="watch-case-244">
+<div class="watch-display-245">
+<div class="watch-status-246">
+<p class="text-247"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-248">
+<p class="text-249"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-250">
+<img src="images/vector-251.svg" class="vector-251" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-252" data-goto="quick-select" role="button" tabindex="0">
+<div class="chevron-left-253">
+<img src="images/vector-254.svg" class="vector-254" alt="vector" />
+</div>
+<p class="text-255"><span class="text-rgb-32-40-48">SIDHU</span></p>
+</div>
+<div class="screen-content-256">
+<p class="text-257"><span class="text-rgb-102-113-125">Message · 09:38</span></p>
+<div class="received-message-258">
+<p class="text-259"><span class="text-rgb-102-113-125">MESSAGE:</span></p>
+<p class="text-260"><span class="text-rgb-32-40-48">ABCDDDG</span></p>
+</div>
+<div class="action-261" data-goto="quick-preset" role="button" tabindex="0">
+<p class="text-262"><span class="text-white">Reply</span></p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-263"><span class="text-rgb-247-248-250">FRAME 3</span></p>
+</div>
+<div class="node-264 screen" id="quick-preset">
+<div class="watch-case-265">
+<div class="watch-display-266">
+<div class="watch-status-267">
+<p class="text-268"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-269">
+<p class="text-270"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-271">
+<img src="images/vector-272.svg" class="vector-272" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-273" data-goto="quick-view" role="button" tabindex="0">
+<div class="chevron-left-274">
+<img src="images/vector-275.svg" class="vector-275" alt="vector" />
+</div>
+<p class="text-276"><span class="text-rgb-32-40-48">Choose reply</span></p>
+</div>
+<div class="screen-content-277">
+<p class="text-278"><span class="text-rgb-102-113-125">To SIDHU · Tap to send</span></p>
+<div class="list-item-279" data-goto="quick-sent" role="button" tabindex="0">
+<div class="item-content-280">
+<p class="text-281"><span class="text-rgb-32-40-48">Okay, thanks!</span></p>
+</div>
+<div class="chevron-right-282">
+<img src="images/vector-283.svg" class="vector-283" alt="vector" />
+</div>
+</div>
+<div class="list-item-284">
+<div class="item-content-285">
+<p class="text-286"><span class="text-rgb-32-40-48">On my way.</span></p>
+</div>
+<div class="chevron-right-287">
+<img src="images/vector-288.svg" class="vector-288" alt="vector" />
+</div>
+</div>
+<div class="list-item-289">
+<div class="item-content-290">
+<p class="text-291"><span class="text-rgb-32-40-48">I’ll reply later.</span></p>
+</div>
+<div class="chevron-right-292">
+<img src="images/vector-293.svg" class="vector-293" alt="vector" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-294"><span class="text-rgb-247-248-250">FRAME 4</span></p>
+</div>
+<div class="node-295 screen" id="quick-sent">
+<div class="watch-case-296">
+<div class="watch-display-297">
+<div class="watch-status-298">
+<p class="text-299"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-300">
+<p class="text-301"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-302">
+<img src="images/vector-303.svg" class="vector-303" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-304" data-goto="quick-preset" role="button" tabindex="0">
+<div class="chevron-left-305">
+<img src="images/vector-306.svg" class="vector-306" alt="vector" />
+</div>
+<p class="text-307"><span class="text-rgb-32-40-48">SIDHU</span></p>
+</div>
+<div class="screen-content-308">
+<div class="sent-confirmation-309">
+<div class="circle-check-310">
+<img src="images/vector-311.svg" class="vector-311" alt="vector" />
+</div>
+<p class="text-312"><span class="text-rgb-32-40-48">Reply sent</span></p>
+<p class="text-313"><span class="text-rgb-32-40-48">“Okay, thanks!”</span></p>
+<p class="text-314"><span class="text-rgb-102-113-125">To SIDHU · 09:41</span></p>
+</div>
+<div class="action-315" data-goto="quick-select" role="button" tabindex="0">
+<p class="text-316"><span class="text-white">Done</span></p>
+</div>
+
+</div>
+</div>
+</div>
+<p class="text-317"><span class="text-rgb-247-248-250">FRAME 5</span></p>
+</div>
+<div class="settings-menu-318 screen" id="settings-menu">
+<div class="watch-case-319">
+<div class="watch-display-320">
+<div class="watch-status-321">
+<p class="text-322"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-323">
+<p class="text-324"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-325">
+<img src="images/vector-326.svg" class="vector-326" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-327" data-goto="home" role="button" tabindex="0">
+<div class="chevron-left-328">
+<img src="images/vector-329.svg" class="vector-329" alt="vector" />
+</div>
+<p class="text-330"><span class="text-rgb-32-40-48">Settings</span></p>
+
+</div>
+<div class="screen-content-331">
+<div class="list-item-332" data-goto="settings-display" role="button" tabindex="0">
+<div class="sun-333">
+<img src="images/vector-334.svg" class="vector-334" alt="vector" />
+</div>
+<div class="item-content-335">
+<p class="text-336"><span class="text-rgb-32-40-48">Display</span></p>
+<p class="text-337"><span class="text-rgb-102-113-125">Brightness, auto rotate</span></p>
+</div>
+<div class="chevron-right-338">
+<img src="images/vector-339.svg" class="vector-339" alt="vector" />
+</div>
+</div>
+<div class="list-item-340" data-goto="settings-watchface" role="button" tabindex="0">
+<div class="watch-341">
+<img src="images/vector-342.svg" class="vector-342" alt="vector" />
+</div>
+<div class="item-content-343">
+<p class="text-344"><span class="text-rgb-32-40-48">Watch face</span></p>
+<p class="text-345"><span class="text-rgb-102-113-125">Digital</span></p>
+</div>
+<div class="chevron-right-346">
+<img src="images/vector-347.svg" class="vector-347" alt="vector" />
+</div>
+</div>
+<div class="list-item-348" data-goto="settings-bluetooth" role="button" tabindex="0">
+<div class="bluetooth-349">
+<img src="images/vector-350.svg" class="vector-350" alt="vector" />
+</div>
+<div class="item-content-351">
+<p class="text-352"><span class="text-rgb-32-40-48">Bluetooth</span></p>
+<p class="text-353"><span class="text-rgb-102-113-125">Connected</span></p>
+</div>
+<div class="chevron-right-354">
+<img src="images/vector-355.svg" class="vector-355" alt="vector" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-356"><span class="text-rgb-247-248-250">FRAME 2</span></p>
+</div>
+<div class="settings-display-357 screen" id="settings-display">
+<div class="watch-case-358">
+<div class="watch-display-359">
+<div class="watch-status-360">
+<p class="text-361"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-362">
+<p class="text-363"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-364">
+<img src="images/vector-365.svg" class="vector-365" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-366" data-goto="settings-menu" role="button" tabindex="0">
+<div class="chevron-left-367">
+<img src="images/vector-368.svg" class="vector-368" alt="vector" />
+</div>
+<p class="text-369"><span class="text-rgb-32-40-48">Display</span></p>
+
+</div>
+<div class="screen-content-370">
+<div class="brightness-value-371">
+<p class="text-372"><span class="text-rgb-32-40-48">Brightness</span></p>
+<p class="text-373"><span class="text-rgb-102-113-125">60%</span></p>
+</div>
+<div class="brightness-slider-374">
+<div class="slider-track-375"></div>
+<div class="slider-fill-376"></div>
+<div class="slider-thumb-377"></div>
+</div>
+<div class="toggle-control-378">
+<p class="text-379"><span class="text-rgb-32-40-48">Auto rotate</span></p>
+<div class="enabled-switch-380">
+<div class="thumb-381"></div>
+</div>
+</div>
+<p class="text-382"><span class="text-rgb-102-113-125">Turn the watch to rotate the display.</span></p>
+</div>
+</div>
+</div>
+<p class="text-383"><span class="text-rgb-247-248-250">FRAME 3</span></p>
+</div>
+<div class="settings-watch-face-384 screen" id="settings-watchface">
+<div class="watch-case-385">
+<div class="watch-display-386">
+<div class="watch-status-387">
+<p class="text-388"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-389">
+<p class="text-390"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-391">
+<img src="images/vector-392.svg" class="vector-392" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-393" data-goto="settings-menu" role="button" tabindex="0">
+<div class="chevron-left-394">
+<img src="images/vector-395.svg" class="vector-395" alt="vector" />
+</div>
+<p class="text-396"><span class="text-rgb-32-40-48">Watch face</span></p>
+</div>
+<div class="screen-content-397">
+<p class="text-398"><span class="text-rgb-102-113-125">Choose a watch face</span></p>
+<div class="list-item-399" data-goto="settings-menu" role="button" tabindex="0">
+<div class="item-content-400">
+<p class="text-401"><span class="text-rgb-53-109-170">Digital</span></p>
+<p class="text-402"><span class="text-rgb-102-113-125">09:41</span></p>
+</div>
+<div class="check-403">
+<img src="images/vector-404.svg" class="vector-404" alt="vector" />
+</div>
+<img src="images/17-00-405.png" class="17-00-405" alt="17-00" />
+</div>
+
+<div class="list-item-406" data-goto="settings-menu" role="button" tabindex="0">
+<div class="item-content-407">
+<p class="text-408"><span class="text-rgb-32-40-48">Analog</span></p>
+<p class="text-409"><span class="text-rgb-102-113-125">Hands and hour marks</span></p>
+</div>
+<div class="chevron-right-410">
+<img src="images/vector-411.svg" class="vector-411" alt="vector" />
+</div>
+<img src="images/future-412.png" class="future-412" alt="future" />
+</div>
+
+<p class="text-413"><span class="text-rgb-102-113-125">Digital is applied</span></p>
+</div>
+</div>
+</div>
+<p class="text-414"><span class="text-white">FRAME 4</span></p>
+</div>
+<div class="settings-bluetooth-415 screen" id="settings-bluetooth">
+<div class="watch-case-416">
+<div class="watch-display-417">
+<div class="watch-status-418">
+<p class="text-419"><span class="text-rgb-102-113-125">09:41</span></p>
+<div class="battery-status-420">
+<p class="text-421"><span class="text-rgb-102-113-125">98%</span></p>
+<div class="battery-full-422">
+<img src="images/vector-423.svg" class="vector-423" alt="vector" />
+</div>
+</div>
+</div>
+<div class="screen-heading-424" data-goto="settings-menu" role="button" tabindex="0">
+<div class="chevron-left-425">
+<img src="images/vector-426.svg" class="vector-426" alt="vector" />
+</div>
+<p class="text-427"><span class="text-rgb-32-40-48">Bluetooth</span></p>
+</div>
+<div class="screen-content-428">
+<div class="toggle-control-429">
+<p class="text-430"><span class="text-rgb-32-40-48">Bluetooth</span></p>
+<div class="enabled-switch-431">
+<div class="thumb-432"></div>
+</div>
+</div>
+<div class="paired-device-433">
+<p class="text-434"><span class="text-rgb-32-40-48">My phone</span></p>
+<p class="text-435"><span class="text-rgb-102-113-125">Connected</span></p>
+</div>
+<div class="action-436" data-goto="settings-menu" role="button" tabindex="0">
+<p class="text-437"><span class="text-rgb-32-40-48">Disconnect</span></p>
+</div>
+
+</div>
+</div>
+</div>
+<p class="text-438"><span class="text-rgb-247-248-250">FRAME 5</span></p>
+</div>
+</main>
+<script>
+  function go(id) {
+    document.querySelectorAll('.screen').forEach(function (s) {
+      s.classList.toggle('active', s.id === id);
+    });
+  }
+  function markSleepRead() {
+    var dot = document.getElementById('sleep-dot');
+    if (dot) dot.style.display = 'none';
+    var c = document.getElementById('unread-count');
+    if (c) c.textContent = '2 unread · Today';
+    var s = document.getElementById('sleep-status');
+    if (s) s.textContent = 'Sleep · Today, 09:15 · Read';
+  }
+  function activate(el) {
+    if (el.dataset.action === 'markread') markSleepRead();
+    go(el.dataset.goto);
+  }
+  document.querySelectorAll('[data-goto]').forEach(function (el) {
+    el.addEventListener('click', function () { activate(el); });
+    el.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(el); }
+    });
+  });
+  go('home');
+</script>
+</body>
+</html>
